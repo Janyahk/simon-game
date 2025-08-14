@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon</title>
+    <style>
+        /* .b1{
+            display: flex;
+            justify-content: center;
+        }
+        .box{
+            border: 5px solid black;
+            border-radius: 20px;
+            height: 200px;
+            width: 200px;
+            margin: 0.5rem;
+            
+        }
+        body{
+            text-align: center;
+            
+        }
+        
+        .red{
+             background-color:  #d95980;
+        }
+        .green{
+            background-color:#63aac0 ;
+        }
+        .yello{
+            background-color: #f99b45;
+        }
+        .blue{
+            background-color: #819ff9;
+        }
+        .white{
+            background-color: white ; 
+        }
+        .userflash{
+            background-color: green;
+        } */
+         body {
+    text-align: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+    color: #333;
+}
+
+h3 {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+.b1 {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    border: 5px solid black;
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Original Simon colors */
+.red {
+    background-color: #d95980;
+}
+.green {
+    background-color: #63aac0;
+}
+.yello {
+    background-color: #f99b45;
+}
+.blue {
+    background-color: #819ff9;
+}
+
+/* Flash animations */
+.white {
+    background-color: white;
+}
+.userflash {
+    background-color: green;
+}
+
+/* Add pressed animation */
+.box:active {
+    transform: scale(0.95);
+    opacity: 0.8;
+}
+
+/* Game over effect */
+body.game-over {
+    background-color: #ff4d4d;
+    transition: background-color 0.5s ease;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Simon Game</h1>
+    <h4></h4>
+    <h3>Press any key to start the game</h3>
+
+    <div class="b1">
+        <div class="box red" id="0" ></div>
+    <div class="box green " id="1"></div>
+</div>
+     <div class="b1">
+        <div class="box yello" id="2"></div>
+    <div class="box blue" id="3"></div>
+</div>
+<script src="simon.js"></script>
+</body>
+</html>
