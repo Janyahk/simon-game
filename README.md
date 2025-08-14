@@ -4,7 +4,7 @@ A fun memory-based Simon Game built with **HTML**, **CSS**, and **JavaScript**.
 The goal is to repeat the sequence of colors as they appear — every round adds a new color to the sequence, testing your memory skills!
 
 ## 🖥 Demo
-Play the game here: [https://janyahk.github.io/simon-game/](https://github.com/Janyahk/simon-game.git)
+Play the game here: (https://janyahk.github.io/simon-game/)(https://github.com/Janyahk/simon-game.git)
 
 ## 📌 Features
 - Classic Simon Game logic
